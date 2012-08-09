@@ -3,6 +3,8 @@
 
   Scale an image or data uri within the given dimensions.
 
+  ![canvas thumbnail image generator](http://f.cl.ly/items/3V2X113N01042G1H0A1u/Screen%20Shot%202012-08-09%20at%2011.35.20%20AM.png)
+
 ## Installation
 
 ```
