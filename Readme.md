@@ -29,7 +29,7 @@ input.onchange = function(e){
 
   reader.readAsDataURL(input.files[0]);
 };
-``
+```
 
 ## License
 
