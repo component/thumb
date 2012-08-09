@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thumb</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="out.css" />
+  </head>
+  <body>
+    <input type="file" name="file">
+    <script src="out.js"></script>
+    <script>
+      var thumb = require('thumb');
+      var input = document.querySelector('input');
+      input.onchange = function(e){
+        
+        var reader = new FileReader;
+        reader.onload = function(){
+          var img = thumb(reader.result);
+          document.body.appendChild(img);
+          document.body.appendChild(thumb(img, 100, 100));
+          document.body.appendChild(thumb(img, 100, 50));
+          document.body.appendChild(thumb(img, 50, 100));
+          document.body.appendChild(thumb(img, 25));
+        };
+
+        reader.readAsDataURL(input.files[0]);
+      };
+    </script>
+  </body>
+</html>
