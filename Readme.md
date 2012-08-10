@@ -21,12 +21,9 @@ input.onchange = function(e){
   var reader = new FileReader;
 
   reader.onload = function(){
-    var img = thumb(reader.result);
-    document.body.appendChild(img);
-    document.body.appendChild(thumb(img, 100, 100));
-    document.body.appendChild(thumb(img, 100, 50));
-    document.body.appendChild(thumb(img, 50, 100));
-    document.body.appendChild(thumb(img, 25));
+    thumb(reader.result, 200, 200, function(err, img){
+      document.body.appendChild(img);
+    });
   };
 
   reader.readAsDataURL(input.files[0]);
