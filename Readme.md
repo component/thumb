@@ -21,7 +21,7 @@ input.onchange = function(e){
   var reader = new FileReader;
 
   reader.onload = function(){
-    thumb(reader.result, 200, 200, function(err, img){
+    thumb(reader.result, 200, 200, function(err, img, datauri){
       document.body.appendChild(img);
     });
   };

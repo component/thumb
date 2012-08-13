@@ -61,6 +61,6 @@ function thumb(img, width, height, fn) {
 function fromURI(str, fn) {
   var img = new Image
   img.onerror = fn;
-  img.onload = function(e){ fn(null, img) };
+  img.onload = function(e){ fn(null, img, str) };
   img.src = str;
 }
