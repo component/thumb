@@ -1,0 +1,7 @@
+{
+  "name": "thumb-component",
+  "description": "Canvas thumbnail generator",
+  "version": "0.0.1",
+  "keywords": ["thumb", "thumbnail", "image", "canvas"],
+  "scripts": ["index.js"]
+}
