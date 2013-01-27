@@ -1,7 +1,7 @@
 {
   "name": "thumb",
   "description": "Canvas thumbnail generator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": ["thumb", "thumbnail", "image", "canvas"],
   "scripts": ["index.js"],
   "license": "mit"
