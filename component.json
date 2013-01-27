@@ -1,7 +1,8 @@
 {
-  "name": "thumb-component",
+  "name": "thumb",
   "description": "Canvas thumbnail generator",
   "version": "0.0.1",
   "keywords": ["thumb", "thumbnail", "image", "canvas"],
-  "scripts": ["index.js"]
+  "scripts": ["index.js"],
+  "license": "mit"
 }
