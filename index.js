@@ -45,7 +45,7 @@ function thumb(img, width, height, fn) {
     canvas.height = height;
     ctx.drawImage(img, 0, 0, width, height);
 
-    fromURI(canvas.toDataURL(), fn);
+    fromURI(canvas.toDataURL('image/jpeg', .9), fn);
   }
 }
 
