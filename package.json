@@ -1,7 +1,7 @@
 {
   "name": "thumb-component",
   "description": "Canvas thumbnail generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": ["thumb", "thumbnail", "image"],
   "component": {
     "scripts": {
