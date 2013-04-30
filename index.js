@@ -16,7 +16,7 @@ module.exports = thumb;
  * @api public
  */
 
-function thumb(img, width, height, fn) {
+function thumb(img, width, height, fn, quality) {
   var canvas = document.createElement('canvas');
   var ctx = canvas.getContext('2d');
 
@@ -45,7 +45,7 @@ function thumb(img, width, height, fn) {
     canvas.height = height;
     ctx.drawImage(img, 0, 0, width, height);
 
-    fromURI(canvas.toDataURL('image/jpeg', .9), fn);
+    fromURI(canvas.toDataURL('image/jpeg', quality || .9), fn);
   }
 }
 
