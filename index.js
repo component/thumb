@@ -23,7 +23,7 @@ function thumb(img, width, height, fn) {
   if ('string' == typeof img) {
     fromURI(img, resize);
   } else {
-    resize(img);
+    resize(null, img);
   }
 
   function resize(err, img) {
