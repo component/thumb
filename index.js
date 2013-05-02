@@ -60,6 +60,7 @@ function thumb(img, width, height, fn, quality) {
 
 function fromURI(str, fn) {
   var img = new Image
+  img.crossOrigin = '';
   img.onerror = fn;
   img.onload = function(e){ fn(null, img, str) };
   img.src = str;
