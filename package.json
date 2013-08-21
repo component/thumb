@@ -2,10 +2,18 @@
   "name": "thumb-component",
   "description": "Canvas thumbnail generator",
   "version": "1.0.5",
-  "keywords": ["thumb", "thumbnail", "image"],
+  "keywords": [
+    "thumb",
+    "thumbnail",
+    "image"
+  ],
   "component": {
     "scripts": {
       "thumb/index.js": "index.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/thumb.git"
   }
 }
